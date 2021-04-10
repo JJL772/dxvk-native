@@ -67,7 +67,7 @@ inline bool operator==(const GUID& a, const GUID& b) { return std::memcmp(&a, &b
 inline bool operator!=(const GUID& a, const GUID& b) { return std::memcmp(&a, &b, sizeof(GUID)) != 0; }
 
 using DWORD   = uint32_t;
-using WORD    = int32_t;
+using WORD    = int16_t;
 
 using HANDLE   = void*;
 using HMONITOR = HANDLE;
